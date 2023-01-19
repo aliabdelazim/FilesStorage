@@ -1,0 +1,11 @@
+{
+  "type": "mysql",
+  "host": "storage-1.ciouuwxfieg3.us-east-1.rds.amazonaws.com",
+  "port": "3306",
+  "username": "admin",
+  "password": "password",
+  "database": "storage",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["dist/**/**.entity{.ts,.js}"]
+}
