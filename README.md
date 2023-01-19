@@ -5,7 +5,7 @@
 $ npm install --force
 ```
 
-## Running Nest.js
+## Running The App
 
 ```bash
 #  Running Storage Service
