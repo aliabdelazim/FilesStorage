@@ -1,6 +1,6 @@
 const https = require('https');
 const http = require('http')
-const { apiEndPoint, storageServiceEndPoint } = require('./constants')
+const { apiEndPoint, storageServiceEndPoint, fetchFileEvery } = require('./constants')
 const { Util } = require('./utils')
 
 /** Connect to remote service and retrieve JSON */
@@ -125,4 +125,4 @@ doesFileExist = (fileName) => {
 setInterval(async () => {
     const json = await fetchJSON();
     processJSON(json);
-}, 300000);
+}, fetchFileEvery);
